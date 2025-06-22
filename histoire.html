@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Histoire du Bhoutan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            flex-grow: 1;
+            overflow-y: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .image-section {
+            margin-bottom: 50px;
+        }
+
+        .image-section img {
+            max-width: 80%;
+            border: 3px solid white;
+            border-radius: 10px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        .image-caption {
+            font-size: 16px;
+            font-style: italic;
+            margin-top: 8px;
+            color: #f0f0f0;
+        }
+
+        /* Style pour 1ère et 4ème sections en flex */
+        .flex-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 50px;
+            text-align: left;
+        }
+
+        .flex-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 900px;
+            margin: 50px auto;
+            text-align: left;
+        }
+
+        .flex-left img,
+        .flex-right img {
+            max-width: 40%;
+            border: 3px solid white;
+            border-radius: 10px;
+        }
+
+        .flex-left .text-container,
+        .flex-right .text-container {
+            color: white;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+            .flex-left,
+            .flex-right {
+                flex-direction: column;
+                text-align: center;
+            }
+            .flex-left img,
+            .flex-right img {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="funfact.html">Fun Facts</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<main>
+    <h1>L’histoire fascinante du Bhoutan</h1>
+
+    <!-- 1ère section : image à gauche, texte à droite -->
+    <div class="flex-left">
+        <img src="images/shabdrung.jpg" alt="Shabdrung Ngawang Namgyal">
+        <div class="text-container">
+            <h2>Unification par Shabdrung Ngawang Namgyal</h2>
+            <p>En 1616, Shabdrung Ngawang Namgyal, un maître spirituel tibétain, fuit les tensions religieuses de son pays pour s’établir au Bhoutan. Il parvient à unifier les vallées rivales sous une même autorité religieuse et politique. Il fonde le système de gouvernement dualiste – un chef religieux et un chef laïc – et pose les bases du Bhoutan moderne.</p>
+            <p class="image-caption">Shabdrung Ngawang Namgyal, fondateur de l’unité bhoutanaise</p>
+        </div>
+    </div>
+
+    <!-- 2ème section : image sous texte -->
+    <h2>Naissance de la monarchie moderne</h2>
+    <p>Au début du XXe siècle, après une période d’instabilité, Ugyen Wangchuck, Penlop de Trongsa, gagne en influence. En 1907, il est unanimement reconnu comme le premier roi du Bhoutan, établissant une monarchie héréditaire qui perdure encore aujourd’hui. Ce fut le début de la dynastie Wangchuck.</p>
+    <div class="image-section">
+        <img src="images/ugyen.jpg" alt="Ugyen Wangchuck">
+        <p class="image-caption">Ugyen Wangchuck, premier roi du Bhoutan (1907)</p>
+    </div>
+
+    <!-- 3ème section : image sous texte -->
+    <h2>Règne actuel et modernisation</h2>
+    <p>Le roi actuel, Jigme Khesar Namgyel Wangchuck, incarne une monarchie jeune, proche du peuple et tournée vers la modernité. Depuis 2008, le Bhoutan est une monarchie constitutionnelle. Le roi joue un rôle symbolique et protecteur tandis que le pays s’ouvre au monde, en maintenant un fort attachement à ses valeurs bouddhistes et à la philosophie du Bonheur National Brut.</p>
+    <div class="image-section">
+        <img src="images/jigme.jpg" alt="Roi actuel du Bhoutan">
+        <p class="image-caption">Jigme Khesar Namgyel Wangchuck, cinquième roi du Bhoutan</p>
+    </div>
+
+    <!-- 4ème section : texte à gauche, image à droite -->
+    <div class="flex-right">
+        <div class="text-container">
+            <h2>Unification du Bhoutan (XVIIe siècle)</h2>
+            <p>Au XVIIe siècle, Shabdrung Ngawang Namgyal, un maître spirituel tibétain, unifie les différentes vallées du Bhoutan sous un seul gouvernement. Il établit une théocratie et fait construire des dzongs fortifiés pour administrer le pays. Cette unification jette les bases de l’identité nationale bhoutanaise, encore très présente aujourd’hui.</p>
+            <p class="image-caption">Le dzong de Punakha, construit sous Shabdrung, symbole de l’unification</p>
+        </div>
+        <img src="images/punakha_dzong.jpg" alt="Dzong de Punakha">
+    </div>
+
+    <!-- 5ème section : image sous texte -->
+    <h2>Accords avec l’Inde et affirmation de l’indépendance (1949)</h2>
+    <p>En 1949, le Bhoutan signe le Traité d’amitié indo-bhoutanais avec l’Inde nouvellement indépendante. Ce traité garantit la non-ingérence de l’Inde dans les affaires internes du Bhoutan, tout en assurant la sécurité du pays. Il marque le début des relations diplomatiques modernes du Bhoutan et son entrée progressive sur la scène internationale.</p>
+    <div class="image-section">
+        <img src="images/inde_bhoutan.jpg" alt="Rencontre diplomatique Inde-Bhoutan">
+        <p class="image-caption">Rencontre diplomatique entre le Bhoutan et l’Inde, symbole d’amitié et de coopération</p>
+    </div>
+</main>
+</body>
+</html>

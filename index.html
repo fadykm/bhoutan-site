@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenue au Bhoutan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex-grow: 1;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .image-text-row,
+    .video-text-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      max-width: 1400px;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+
+    .text-container {
+      max-width: 600px;
+      font-size: 22px;
+      text-align: left;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 700px;
+      aspect-ratio: 16/9;
+      border: 5px solid rgba(255,255,255,0.6);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    @media (max-width: 1000px) {
+      .image-text-row,
+      .video-text-row {
+        flex-direction: column;
+      }
+
+      .text-container {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="histoire.html">Histoire</a>
+  <a href="funfact.html">Fun Facts</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Bienvenue au Bhoutan 🇧🇹</h1>
+
+  <div class="image-text-row">
+    <div class="image-container">
+      <img src="images/bhoutan_paysage.jpg" alt="Paysage du Bhoutan">
+    </div>
+
+    <div class="text-container">
+      <p>
+        Situé au cœur de l’Himalaya, le Bhoutan est un royaume unique, niché entre montagnes vertigineuses et vallées luxuriantes.
+        Son isolement géographique a préservé une culture riche, tournée vers le respect de la nature et du bonheur collectif.
+      </p>
+    </div>
+  </div>
+
+  <div class="video-text-row">
+    <div class="text-container">
+      <p>
+        Découvrez le Bhoutan vu du ciel : des monastères perchés sur les falaises, des forêts épaisses et des villages paisibles.
+        Cette vidéo offre un aperçu saisissant de ce pays où le temps semble suspendu.
+      </p>
+    </div>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/J7R8AR-R5pA"
+              title="Bhutan in Stunning 4K"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

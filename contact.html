@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Bhoutan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      flex-grow: 1;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label, input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      background-color: #ffffff;
+      color: black;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="histoire.html">Histoire</a>
+  <a href="funfact.html">Fun Facts</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Contactez-nous 📨</h1>
+  <p style="font-size: 20px; max-width: 700px; margin: 0 auto 30px auto;">
+    Vous avez une question ou une remarque sur le Bhoutan ? Écrivez-nous ci-dessous :
+  </p>
+
+  <form action="https://formsubmit.co/fadykhomsimoujahid@outlook.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</main>
+</body>
+</html>
